@@ -7,6 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
+	@FindBy(linkText="Products")
+	private WebElement productlink;
+	
 	@FindBy(linkText="Organizations")
 	private WebElement orgLink;
 	
@@ -18,6 +21,9 @@ public class HomePage {
 	@FindBy(linkText="More")
 	private WebElement moreLink;
 	
+	public WebElement getProductlink() {
+		return productlink;
+	}
 	@FindBy(xpath="//img[@src='themes/softed/images/user.PNG']")
 	private WebElement adminImg;
 	
