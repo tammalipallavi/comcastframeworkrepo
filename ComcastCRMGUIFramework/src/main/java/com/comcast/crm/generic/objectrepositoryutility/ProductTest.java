@@ -8,5 +8,7 @@ public class ProductTest {
 	private WebElement productlink;
 	@FindBy(name="search")
 	private WebElement ele1;
+	@FindBy(name="search")
+	private WebElement ele3;
 
 }
